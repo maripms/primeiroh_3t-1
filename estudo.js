@@ -1,4 +1,4 @@
-//alert("");
+ //alert("");
 //console.log("");
 //document.write("");
 
@@ -17,7 +17,7 @@ function meChame(nome){
     document.write(tabuada + " x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br");
     document.write("Feita por " + nome);
-    
+
 }
 
 function escreva(){
@@ -35,12 +35,29 @@ function total(){
     let valor = document.getElementById("val").value;
     let juros = document.getElementById("ju").value;
     let mes = document.getElementById("mes").value;
+
+    if (!Number(valor)){
+        alert("o valor deve ser um número");
+        return 
+    }
+
+    if (!Number(juros)){
+        alert("o valor deve ser um número");
+        return 
+    }
+
+    if (!Number(mes)){
+        alert("o valor deve ser um número");
+        return 
+    }
+
+
     let resultado = 0;
     for(let i = 1; i <= mes; i++){
         resultado = valor * (1+(juros/100));
         valor = resultado;
     }
-    
+
     document.write("O Resultado é " + resultado);
 }
 
