@@ -2,7 +2,7 @@
 //console.log("");
 //document.write("");
 
-var tabuada = 8;
+var tabuada = 9;
 
 function meChame(nome){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
