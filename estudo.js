@@ -16,6 +16,7 @@ function meChame(nome){
     document.write(tabuada + " x 8 = "+(tabuada*8)+"<br>");
     document.write(tabuada + " x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br");
+    document.write(tabuada + " x 10 = "+(tabuada*11)+"<br");
     document.write("Feita por " + nome);
 
 }
