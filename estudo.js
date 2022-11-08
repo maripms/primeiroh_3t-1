@@ -32,7 +32,7 @@ function quadrado() {
     }
 }
 function moeda(atual){
-    return  atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 }
 
 function total() {
@@ -59,13 +59,31 @@ function total() {
     }
 
     let resultado = 0;
+    let texto = "";
     for (let i = 1; i <= mes; i++) {
         resultado = valor * (1 + (juros / 100));
         valor = resultado;
-        document.write("Mês " + i + "valor: " + moeda(resultado) + "<br>"); 
-        // document.write("Mês " + i + "valor: " moeda(resultado) + "<br>" 
+         texto += "Mês " + i + " valor: " + moeda(resultado) + "<br>";
+        //document.write("Mês " + i + " valor: " + moeda(resultado) + "<br>");
     }
-    document.getElementById ("resultado").innerHTML = "Total: " + moeda(resultado);
-   /// document.write("O Resultado é " + moeda(resultado));
+    document.getElementById("meses").innerHTML = texto;
+    document.getElementById("resultado").innerHTML = "Total: " + moeda(resultado);
+    //document.write( "O Resultado é " + moeda(resultado) );
 }
 
+    function  calculeRaiz(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let delta = (b*b) - 4*a*c
+
+        if(delta < 0){
+        
+        }
+        else if (delta == 0){
+
+        } else {
+
+        }
+
+     }
